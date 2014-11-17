@@ -1,0 +1,70 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="328dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="19dp"
+        android:layout_x="0dp"
+        android:layout_y="-58dp"
+        android:src="@drawable/b1"
+        android:thumb="@drawable/advance" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_x="0dp"
+        android:layout_y="218dp"
+        android:src="@drawable/white" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="285dp"
+        android:progressDrawable="@color/azul"
+        android:thumb="@drawable/advance" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="70dp"
+        android:layout_y="262dp"
+        android:text="@string/med1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="126dp"
+        android:layout_y="349dp"
+        android:background="@drawable/play1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="53dp"
+        android:layout_x="45dp"
+        android:layout_y="348dp"
+        android:background="@drawable/btn_2" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="47dp"
+        android:layout_x="216dp"
+        android:layout_y="349dp"
+        android:background="@drawable/btn_1" />
+
+</AbsoluteLayout>

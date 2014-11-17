@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.appapachofertil.LogIn"
+    android:background="@drawable/cred"
+    android:screenOrientation="portrait" >
+ <!-- Header aligned to top -->
+ 
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="576dp"
+      android:orientation="vertical" >
+
+      <EditText
+          android:id="@+id/editText2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/editText1"
+          android:layout_below="@+id/editText1"
+          android:layout_marginTop="15dp"
+          android:background="#73ffffff"
+          android:ems="10"
+          android:imeOptions="actionNext"
+          android:text="@string/email" />
+
+      <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/unnamed" />
+
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imageView1"
+          android:layout_centerHorizontal="true"
+          android:background="#73ffffff"
+          android:ems="10"
+          android:imeOptions="actionNext"
+          android:text="@string/nombre" />
+
+      <TextView
+          android:id="@+id/small"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/imageView1"
+          android:layout_below="@+id/button1"
+          android:layout_marginTop="34dp"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+      <Switch
+          android:id="@+id/switch2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/small"
+          android:layout_alignLeft="@+id/editText3"
+          android:text="Notificaciones" />
+
+      <TextView
+          android:id="@+id/priv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/small"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:text="Aviso privacidad"
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <EditText
+          android:id="@+id/editText3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/editText2"
+          android:layout_alignRight="@+id/button1"
+          android:layout_below="@+id/spinner1"
+          android:layout_marginTop="40dp"
+          android:background="#73FFFFFF"
+          android:ems="10"
+          android:imeOptions="actionDone" />
+
+      <ImageButton
+          android:id="@+id/imageButton1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/editText2"
+          android:layout_alignTop="@+id/editText3"
+          android:src="@drawable/ic_action_event" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/acerc"
+          android:layout_below="@+id/imageButton1"
+          android:layout_marginTop="32dp"
+          android:text="Guardar" />
+
+      <TextView
+          android:id="@+id/acerc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/priv"
+          android:layout_centerHorizontal="true"
+          android:text="Acerca de"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <Spinner
+          android:id="@+id/spinner1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/editText2"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="29dp"
+          android:background="#73FFFFFF" />
+
+  </RelativeLayout>
+
+</ScrollView>

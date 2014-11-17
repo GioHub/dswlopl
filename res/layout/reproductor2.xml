@@ -1,0 +1,78 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/barra" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="47dp"
+        android:layout_x="228dp"
+        android:layout_y="392dp"
+        android:background="@drawable/btn_1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="53dp"
+        android:layout_x="56dp"
+        android:layout_y="391dp"
+        android:background="@drawable/btn_2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="138dp"
+        android:layout_y="392dp"
+        android:background="@drawable/play1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="328dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="19dp"
+        android:layout_x="-4dp"
+        android:layout_y="1dp"
+        android:src="@drawable/b3"
+        android:thumb="@drawable/advance" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_x="0dp"
+        android:layout_y="278dp"
+        android:src="@drawable/white" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="345dp"
+        android:progressDrawable="@color/azul"
+        android:thumb="@drawable/advance" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="70dp"
+        android:layout_y="322dp"
+        android:layout_gravity="center"
+        android:text="@string/med3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</AbsoluteLayout>

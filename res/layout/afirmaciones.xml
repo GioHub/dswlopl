@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:screenOrientation="portrait"
+    tools:context="com.cipolat.slidenavigation.AfirmacionesFragment" >
+    
+   
+    
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" >
+     
+           <FrameLayout
+        android:id="@+id/afirmacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#ffffff"
+        />
+  
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="3542dp"
+            android:layout_x="0dp"
+            android:layout_y="276dp"
+            android:background="@drawable/bg2"
+            android:cacheColorHint="@android:color/holo_orange_light"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="10dp"
+            android:scrollbarSize="700dp"
+            android:scrollbarStyle="outsideOverlay" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="364dp"
+            android:layout_height="287dp"
+            android:layout_x="-2dp"
+            android:layout_y="-54dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0dp"
+            android:layout_y="167dp"
+            android:src="@drawable/afirmaciones_bg" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="228dp"
+            android:layout_height="64dp"
+            android:layout_x="50dp"
+            android:layout_y="193dp"
+            android:gravity="center"
+            android:text="Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="10dp" />
+
+  
+  
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_x="290dp"
+            android:layout_y="243dp"
+            android:background="@drawable/ind_sq_btn1" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_x="264dp"
+            android:layout_y="243dp"
+            android:background="@drawable/ind_sq_btn2" />
+    </AbsoluteLayout>
+
+        </RelativeLayout>
+</ScrollView>

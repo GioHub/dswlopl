@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity" >
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="158dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="0dp"
+            android:layout_x="162dp"
+            android:layout_y="16dp"
+            android:background="@drawable/m_4" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="158dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="0dp"
+            android:layout_x="3dp"
+            android:layout_y="16dp"
+            android:background="@drawable/m_1" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="158dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="0dp"
+            android:layout_x="4dp"
+            android:layout_y="236dp"
+            android:background="@drawable/m_3" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="158dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="0dp"
+            android:layout_x="163dp"
+            android:layout_y="236dp"
+            android:background="@drawable/m_2" />
+
+    </AbsoluteLayout>
+ 
+</RelativeLayout>

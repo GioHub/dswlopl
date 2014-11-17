@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home1"
+    android:screenOrientation="portrait"
+    android:orientation="vertical" >
+    
+    <Button
+        android1:id="@+id/btn2"
+        android1:layout_width="fill_parent"
+        android1:layout_height="50dp"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentLeft="true"
+        android1:background="@drawable/menu_inf" />
+
+    <Button
+        android1:id="@+id/btn4"
+        android1:layout_width="50dp"
+        android1:layout_height="50dp"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:background="@drawable/btn2" />
+       
+<AbsoluteLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:layout_centerVertical="true" >
+
+    <RelativeLayout
+        android1:id="@+id/header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_x="2dp"
+        android1:layout_y="51dp"
+        android1:orientation="horizontal" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_x="-2dp"
+        android1:layout_y="120dp"
+        android1:gravity="left" >
+    </LinearLayout>
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_x="29dp"
+        android1:layout_y="226dp"
+        android1:text=""
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android1:id="@+id/textView2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_x="31dp"
+        android1:layout_y="315dp"
+        android1:text=""
+        android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android1:id="@+id/btn9"
+        android1:layout_width="fill_parent"
+        android1:layout_height="69dp"
+        android1:layout_x="0dp"
+        android1:layout_y="0dp"
+        android1:background="@drawable/afirmaciones_bg" />
+
+   <com.appapachofertil.CalendarView
+        android1:id="@+id/calendar"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_x="0dp"
+        android1:layout_y="69dp" >
+
+     
+
+    </com.appapachofertil.CalendarView>
+
+    <ImageView
+        android1:id="@+id/imageView2"
+        android1:layout_width="200dp"
+        android1:layout_height="50dp"
+        android1:layout_x="98dp"
+        android1:layout_y="206dp"
+        android1:src="@drawable/detalle_sq_big" />
+
+    <ImageView
+        android1:id="@+id/ImageView01"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_x="24dp"
+        android1:layout_y="256dp"
+        android1:src="@drawable/detalle_sq" />
+
+    <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_x="22dp"
+        android1:layout_y="168dp"
+        android1:src="@drawable/detalle_sq" />
+
+    <TextView
+        android1:id="@+id/textView3"
+        android1:layout_width="101dp"
+        android1:layout_height="wrap_content"
+        android1:layout_x="146dp"
+        android1:layout_y="220dp"
+        android1:gravity="center"
+        android1:text="Sin citas"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android1:id="@+id/btn6"
+        android1:layout_width="25dp"
+        android1:layout_height="25dp"
+        android1:layout_x="214dp"
+        android1:layout_y="268dp"
+        android1:background="@drawable/detalle_btn_1" />
+
+    <Button
+        android1:id="@+id/btn7"
+        android1:layout_width="25dp"
+        android1:layout_height="25dp"
+        android1:layout_x="236dp"
+        android1:layout_y="268dp"
+        android1:background="@drawable/detalle_btn_2" />
+
+    <TextView
+        android1:id="@+id/textView4"
+        android1:layout_width="228dp"
+        android1:layout_height="60dp"
+        android1:layout_x="54dp"
+        android1:layout_y="6dp"
+        android1:text="Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"
+        android1:textSize="10dp" />
+
+</AbsoluteLayout>
+
+<Button
+    android1:id="@+id/btn3"
+    android1:layout_width="50dp"
+    android1:layout_height="50dp"
+    android1:layout_alignParentBottom="true"
+    android1:layout_alignParentLeft="true"
+    android1:layout_marginLeft="30dp"
+    android1:background="@drawable/btn1" />
+
+<Button
+    android1:id="@+id/btnmed"
+    android1:layout_width="50dp"
+    android1:layout_height="50dp"
+    android1:layout_alignParentBottom="true"
+    android1:layout_alignParentRight="true"
+    android1:layout_marginRight="26dp"
+    android1:background="@drawable/btn3" />
+	
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appapachofertil"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.appapachofertil.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/CustomActionBarTheme" >
+        <!--  <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />-->
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".GCMService" />
+
+        <receiver
+            android:name=".GCMBroadCastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.appapachofertil" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".HomeFragment"
+            android:label="@string/title_activity_home_fragment" >
+        </activity>
+        <activity
+            android:name=".ProfileFragment"
+            android:label="@string/title_activity_profile_fragment" >
+        </activity>
+        <activity
+            android:name=".AfirmacionesFragment"
+            android:label="@string/title_activity_afirmaciones_fragment" >
+        </activity>
+        <activity
+            android:name=".MeditacionesFragment"
+            android:label="@string/title_activity_meditaciones_fragment" >
+        </activity>
+        <activity
+            android:name=".CalendarioFragment"
+            android:label="@string/title_activity_calendario_fragment" >
+        </activity>
+        <activity
+            android:name=".DiarioFragment"
+            android:label="@string/title_activity_diario_fragment" >
+        </activity>
+        <activity
+            android:name=".LibrosFragment"
+            android:label="@string/title_activity_libros_fragment" >
+        </activity>
+        <activity
+            android:name=".SitiosFragment"
+            android:label="@string/title_activity_sitios_fragment" >
+        </activity>
+        <activity
+            android:name=".LogIn"
+            android:label="@string/title_activity_log_in" >
+        </activity>
+        <activity
+            android:name=".Reproductor"
+            android:label="@string/title_activity_reproductor" >
+        </activity>
+        <activity
+            android:name=".Evento"
+            android:label="@string/title_activity_evento" >
+        </activity>
+        <activity
+            android:name=".Reproductor1"
+            android:label="@string/title_activity_reproductor1" >
+        </activity>
+        <activity
+            android:name=".Reproductor2"
+            android:label="@string/title_activity_reproductor2" >
+        </activity>
+        <activity
+            android:name=".Reproductor3"
+            android:label="@string/title_activity_reproductor3" >
+        </activity>
+        <activity
+            android:name=".Libros"
+            android:label="@string/title_activity_libros" >
+        </activity>
+        <activity
+            android:name=".Stios"
+            android:label="@string/title_activity_stios" >
+        </activity>
+        <activity
+            android:name=".MotherActivity"
+            android:label="@string/title_activity_mother" >
+        </activity>
+    </application>
+
+</manifest>
