@@ -8,6 +8,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="inital_Time">Inicio</string>
     <string name="nombre">Escriba su nombre</string>
+    <string name="save">Guardar</string>
     <string name="email">Correo electronico</string>
     <string name="afirmacion">"Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"</string>
     <string name="aceptar">Aceptar</string>
@@ -20,12 +21,12 @@
 
     <!-- Lista de titulos de navegacion -->
     <string-array name="nav_options">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Prm</item>
+        <item>Sec</item>
+        <item>Thr</item>
+        <item>fou</item>
+        <item>fif</item>
+        <item>Six</item>
     </string-array>
 
     <!-- Lista de iconos de navegacion -->

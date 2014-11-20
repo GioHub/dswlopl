@@ -27,6 +27,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -34,6 +35,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -251,6 +253,7 @@ public class LogIn extends Activity implements OnClickListener {
 	    		 System.out.println("Nada");
 	    	 }
 	        et = (EditText) findViewById(R.id.editText3);
+	        et.setGravity(Gravity.CENTER);
 	           date = et.getText().toString();
 	           
 	        ib.setOnClickListener(this);
@@ -260,18 +263,19 @@ public class LogIn extends Activity implements OnClickListener {
 					public void onClick(View v) {
 						Intent a = new Intent(LogIn.this,MainActivity.class);
 					startActivity(a);
-					Toast.makeText(getApplication(), "Bienvanida" + "\n"+ value , Toast.LENGTH_LONG).show();
+					//Toast.makeText(getApplication(), "Bienvanida" + "\n"+ value , Toast.LENGTH_LONG).show();
 					System.out.println(date);
             // Status();
 					
 					  NotificationCompat.Builder notificacion = new NotificationCompat.Builder(LogIn.this);
 //					     // Personalizacion
 					        notificacion.setSmallIcon(R.drawable.notification); // Icono pequeno superior
-					        notificacion.setTicker("Felicidades"); // Mensaje cuando aparece
+					        Resources res = getResources();
+					        notificacion.setTicker(String.format(res.getString(R.string.registeredc))); // Mensaje cuando aparece
 					        notificacion.setWhen(System.currentTimeMillis()); // Hora que mostramos en la notificacion
-					        notificacion.setContentTitle("Appapacho Fértil");
-					        notificacion.setContentText("Usted esta registrado en Appapacho Fértil y recibirá una notificación diaria!");
-					        notificacion.setContentInfo("Afirmaciones Diarias"); // Informacion breve-extra
+					        notificacion.setContentTitle(String.format(res.getString(R.string.app_name)));
+					        notificacion.setContentText(String.format(res.getString(R.string.registered)));
+					        notificacion.setContentInfo(String.format(res.getString(R.string.daily))); // Informacion breve-extra
 					        Uri sonido = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
 					        notificacion.setSound(sonido);
 //					        
@@ -378,14 +382,14 @@ public class LogIn extends Activity implements OnClickListener {
 
 		        	 if (isChecked) {
 
-		        	 Toast.makeText(getApplicationContext(), "The switch is ON",
-		        	 Toast.LENGTH_SHORT).show();
+		        	 //Toast.makeText(getApplicationContext(), "The switch is ON",
+		        	 //Toast.LENGTH_SHORT).show();
 
 		        	 
 		        	 } else {
 
-		        	 Toast.makeText(getApplicationContext(),
-		        	 "The switch is OFF", Toast.LENGTH_SHORT).show();
+		        	 //Toast.makeText(getApplicationContext(),
+		        	 //"The switch is OFF", Toast.LENGTH_SHORT).show();
 		        	 }
 
 		        	 }
@@ -404,8 +408,7 @@ public class LogIn extends Activity implements OnClickListener {
 		        // boolean checkBoxValue = sharedPreferences.getBoolean("CheckBox_Value", false);
 		         String name = sharedPreferences.getString("storedName", "Usuario");
 
-		     
-		         nombre.setText(name);
+		         //nombre.setText(name);
 		     }
 
 		     private void savePreferences(String key, boolean value) {

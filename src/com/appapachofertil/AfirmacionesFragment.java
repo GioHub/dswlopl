@@ -16,6 +16,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
@@ -88,7 +89,17 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 			listView.setOnItemClickListener(this);
 			
 			if (Utils.isNetworkAvailable(getActivity())) {
-				new MyTask().execute(rssFeed);
+				Resources res = getResources();
+				String mainp = String.format(res.getString(R.string.mainphrase));
+				if(mainp.toUpperCase().contains("THE"))
+				{
+					new MyTask().execute(rssFeed1);
+				}
+				else
+				{
+					new MyTask().execute(rssFeed);
+				}
+				
 			} else {
 				showToast("No Network Connection!!!");
 			}

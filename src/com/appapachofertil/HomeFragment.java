@@ -70,7 +70,7 @@ public class HomeFragment extends Fragment implements OnDispatchDateSelectListen
 	        View rootView = inflater.inflate(R.layout.home, container, false);
 	        mTextView = (TextView)rootView.findViewById(R.id.textView4);
 	
-	                  //  mTextView.setText(item.getDesc);
+	                    //mTextView.setText("Mos");//item.getDesc
 	             
 	        mFormat = new SimpleDateFormat("EEEE d MMMM yyyy");
 	  

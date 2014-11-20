@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,6 +37,7 @@ public class MainActivity extends Activity {
 protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);		
+		Resources res = getResources();
 
 		//Drawer Layout
 		NavDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -53,17 +55,18 @@ protected void onCreate(Bundle savedInstanceState) {
         NavItms = new ArrayList<Item_objct>();
         //Agregamos objetos Item_objct al array
         //Perfil	      
-        NavItms.add(new Item_objct(titulos[0], NavIcons.getResourceId(0, -1)));
+        NavItms.add(new Item_objct("                          " + String.format(res.getString(R.string.menu1)), NavIcons.getResourceId(1, -1)));
         //Favoritos
-        NavItms.add(new Item_objct(titulos[1], NavIcons.getResourceId(1, -1)));
+        NavItms.add(new Item_objct("                          " + "", NavIcons.getResourceId(1, -1)));
+        //NavItms.add(new Item_objct(titulos[1], NavIcons.getResourceId(1, -1)));
         //Eventos
-        NavItms.add(new Item_objct(titulos[2], NavIcons.getResourceId(2, -1)));
+        NavItms.add(new Item_objct("                          " + String.format(res.getString(R.string.menu3)), NavIcons.getResourceId(2, -1)));
         //Lugares
-        NavItms.add(new Item_objct(titulos[3], NavIcons.getResourceId(3, -1)));
+        NavItms.add(new Item_objct("                          " + String.format(res.getString(R.string.menu4)), NavIcons.getResourceId(3, -1)));
         //Etiquetas
-        NavItms.add(new Item_objct(titulos[4], NavIcons.getResourceId(4, -1)));
+        NavItms.add(new Item_objct("                          " + String.format(res.getString(R.string.menu5)), NavIcons.getResourceId(4, -1)));
         
-        NavItms.add(new Item_objct(titulos[5], NavIcons.getResourceId(5, -1)));
+        NavItms.add(new Item_objct("                          " + String.format(res.getString(R.string.menu6)), NavIcons.getResourceId(5, -1)));
         //Configuracion
        // NavItms.add(new Item_objct(titulos[5], NavIcons.getResourceId(5, -1)));
         //Share
@@ -132,6 +135,9 @@ private void MostrarFragment(int position) {
     case -1:
         fragment = new AfirmacionesFragment();
         break;
+    case 0:
+        fragment = new AfirmacionesFragment();
+        break;
     case 1:
         fragment = new HomeFragment();
         break;
@@ -175,7 +181,14 @@ private void MostrarFragment(int position) {
         NavList.setItemChecked(position, true);
         NavList.setSelection(position);
         //Cambiamos el titulo en donde decia "
-        setTitle(titulos[position-1]);
+        if(position<=0)
+        {
+        	setTitle(titulos[position]);
+        }
+        else
+        {
+        	setTitle(titulos[position-1]);
+        }
         //Cerramos el menu deslizable
         NavDrawerLayout.closeDrawer(NavList);
     } else {

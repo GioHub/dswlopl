@@ -26,6 +26,7 @@
           android:background="#73ffffff"
           android:ems="10"
           android:imeOptions="actionNext"
+          android:hint="@string/mailplace"
           android:text="@string/email" />
 
       <ImageView
@@ -47,6 +48,7 @@
           android:background="#73ffffff"
           android:ems="10"
           android:imeOptions="actionNext"
+          android:hint="@string/nombreplace"
           android:text="@string/nombre" />
 
       <TextView
@@ -65,7 +67,7 @@
           android:layout_height="wrap_content"
           android:layout_alignBottom="@+id/small"
           android:layout_alignLeft="@+id/editText3"
-          android:text="Notificaciones" />
+          android:text="@string/notifications" />
 
       <TextView
           android:id="@+id/priv"
@@ -73,8 +75,8 @@
           android:layout_height="wrap_content"
           android:layout_below="@+id/small"
           android:layout_centerHorizontal="true"
-          android:layout_marginTop="20dp"
-          android:text="Aviso privacidad"
+          android:layout_marginTop="80dp"
+          android:text="@string/privacy"
           android:textAppearance="?android:attr/textAppearanceLarge" />
 
       <EditText
@@ -87,6 +89,7 @@
           android:layout_marginTop="40dp"
           android:background="#73FFFFFF"
           android:ems="10"
+          android:hint="@string/dateplace"
           android:imeOptions="actionDone" />
 
       <ImageButton
@@ -104,7 +107,7 @@
           android:layout_alignLeft="@+id/acerc"
           android:layout_below="@+id/imageButton1"
           android:layout_marginTop="32dp"
-          android:text="Guardar" />
+          android:text="@string/save" />
 
       <TextView
           android:id="@+id/acerc"
@@ -112,7 +115,7 @@
           android:layout_height="wrap_content"
           android:layout_below="@+id/priv"
           android:layout_centerHorizontal="true"
-          android:text="Acerca de"
+          android:text="@string/about"
           android:textAppearance="?android:attr/textAppearanceMedium" />
 
       <Spinner
@@ -122,6 +125,7 @@
           android:layout_below="@+id/editText2"
           android:layout_centerHorizontal="true"
           android:layout_marginTop="29dp"
+          android:ems="10"
           android:background="#73FFFFFF" />
 
   </RelativeLayout>

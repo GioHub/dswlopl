@@ -67,7 +67,7 @@
             android:layout_x="50dp"
             android:layout_y="193dp"
             android:gravity="center"
-            android:text="Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"
+            android:text="@string/mainphrase"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="10dp" />
 

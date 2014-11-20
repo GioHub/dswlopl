@@ -10,9 +10,9 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
     public void onItemSelected(AdapterView<?> parent, View view, int pos,
             long id) {
          
-        Toast.makeText(parent.getContext(), 
+       /* Toast.makeText(parent.getContext(), 
                 "País: \n" + parent.getItemAtPosition(pos).toString(),
-                Toast.LENGTH_LONG).show();
+                Toast.LENGTH_LONG).show();*/
     }
  
     @Override
