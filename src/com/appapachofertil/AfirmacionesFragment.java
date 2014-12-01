@@ -24,6 +24,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.CalendarContract.Events;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -42,6 +43,7 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 	 public ListView listView;
 	 List<Item> arrayOfList;
 	 private TextView textView;
+	 private TextView diag;
 	  String fechahoy=null;
 	 private static final String rssFeed = "https://s3-us-west-1.amazonaws.com/test1carmen/afirmaciones.xml";
 	 private static final String rssFeed1 = "https://s3-us-west-1.amazonaws.com/test1carmen/afirmacionesingles.xml";
@@ -56,7 +58,6 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 	                ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		 
 	        View rootView = inflater.inflate(R.layout.afirmaciones, container, false);
-	        
 	       
 	    	
 	    	 SimpleDateFormat sf = new SimpleDateFormat("dd/MM/yyyy ");
@@ -80,7 +81,7 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 
 	            
 	    textView=(TextView)rootView.findViewById(R.id.textView1);
-	       
+	    
 	       
 
 
@@ -195,8 +196,23 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 			 
 			    // inflate and set the layout for the dialog
 			    // pass null as the parent view because its going in the dialog layout
-			    alertDialog.setView(inflater.inflate(R.layout.dialog, null));
-			                   
+			    View viewdialog = inflater.inflate(R.layout.dialog, null, false);
+			    //alertDialog.setView(inflater.inflate(R.layout.dialog, null));
+			    alertDialog.setView(viewdialog);
+			    //diag=(TextView)rootView.findViewById(R.id.diag);
+			    diag = (TextView)viewdialog.findViewById(R.id.diag);
+			    //alertDialog.getContext().
+			    String prev = "";
+			    if(item.getDesc().length()>30)
+			    {
+			    	prev = item.getDesc().substring(0, 31) + "-\n";
+			    	prev += item.getDesc().substring(31, 55) + "...";
+			    }
+			    else{
+			    	prev = item.getDesc();
+			    }
+			    diag.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+			    diag.setText(prev);
 //			    try {
 //					 
 //					 imageUrl = new URL(item.getLink());
@@ -228,6 +244,7 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 		 
 		            // Write your code here to invoke YES event
 		       //     Toast.makeText(getActivity(), "You clicked on YES", Toast.LENGTH_SHORT).show();
+		            	//Toast.makeText(getActivity(), "HHHH", Toast.LENGTH_SHORT);
 		            }
 		        });
 		 
@@ -256,7 +273,7 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 			
 			     
 			textView.setText(item.getDesc());
-
+			//diag.setText("deaks");
 			  
 			 Button btn1 =(Button)getActivity().findViewById(R.id.btn1);
 	            btn1.setOnClickListener(new OnClickListener() {
@@ -292,7 +309,7 @@ public class AfirmacionesFragment extends Fragment implements OnItemClickListene
 				        // Setting Positive "Yes" Button
 				        alertDialog.setPositiveButton("Cancelar", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog,int which) {
-				 
+				            	//Toast.makeText(getActivity(), "HHHH2", Toast.LENGTH_SHORT);
 				            // Write your code here to invoke YES event
 				       //     Toast.makeText(getActivity(), "You clicked on YES", Toast.LENGTH_SHORT).show();
 				            }
