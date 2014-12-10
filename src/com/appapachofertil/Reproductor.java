@@ -44,8 +44,30 @@ public class Reproductor extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				Toast.makeText(getApplication(), "Hola", Toast.LENGTH_SHORT).show();
+				String url = med1; // your URL here
+				MediaPlayer mediaPlayer = new MediaPlayer();
+				mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+				try {
+					mediaPlayer.setDataSource(url);
+					mediaPlayer.prepareAsync(); // might take long! (for buffering, etc)
+					mediaPlayer.start();
+				} catch (IllegalArgumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SecurityException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalStateException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
-			Toast.makeText(getApplication(), "Hola", Toast.LENGTH_SHORT).show();
+				
+			/*Toast.makeText(getApplication(), "Hola", Toast.LENGTH_SHORT).show();
 		mPlayer = new MediaPlayer();
 		mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
@@ -83,7 +105,7 @@ public class Reproductor extends Activity {
 			    mPlayer.pause();
 			} else {
 			    mPlayer.start();
-			}
+			}*/
 		   
           }
                

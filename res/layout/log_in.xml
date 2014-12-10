@@ -122,6 +122,15 @@
           android:layout_centerHorizontal="true"
           android:text="@string/about"
           android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <TextView
+          android:id="@+id/skipintro"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/acerc"
+          android:layout_centerHorizontal="true"
+          android:text="@string/skipintro"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
 
       <Spinner
           android:id="@+id/spinner1"
