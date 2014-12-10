@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Appapacho Fertil</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="inital_Time">Inicio</string>
+    <string name="nombre"></string>
+    <string name="nombreplace">Username</string>
+    <string name="mailplace">E-mail</string>
+    <string name="dateplace">Pick a date</string>
+    <string name="save">Save</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy">Privacy</string>
+    <string name="about">About</string>
+    <string name="registeredc">Congratulations. You are registered!!</string>
+    <string name="registered">Now you are registered to service</string>
+    <string name="daily">Daily messages</string>
+    <string name="email"></string>
+    <string name="afirmacion">"Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="med1">Iluminando mi interior</string>
+    <string name="med2">¿Fue negativo? ¡Re-Armonizate!</string>
+    <string name="med3">Alcanzando mis sueños</string>
+    <string name="med4">Armonizate pre tratamiento</string>
+    <string name="cumpleanos"> Un apapacho de luz para este día tan especial.Siente como te abraza, te sostiene e irradias con ella paz. ¡Feliz Cumpleaños!</string>
+    <string name="mainphrase">Infinite Spirit, open the way for my great abundance.I am an irresistible magnet for all that belongs to me by Divine Right. - Florence Scovel Shinn</string>
+    <string name="menu1">DAILY HUG</string>
+    <string name="menu2">MEDITATIONS</string>
+    <string name="menu3">MEDITATIONS</string>
+    <string name="menu4">CHECK YOUR DAY</string>
+    <string name="menu5">SOUL NOTES</string>
+    <string name="menu6">CURIOSITY</string>
+
+    <!-- Lista de titulos de navegacion -->
+    <string-array name="nav_options">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Lista de iconos de navegacion -->
+    <array name="navigation_iconos">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </array>
+    <array name="Array_libros">
+        <item>Español</item>
+        <item>Ingles</item>
+        <item>Frances</item>
+    </array>
+
+    <string name="title_activity_home_fragment">Home</string>
+    <string name="title_activity_profile_fragment">Perfil</string>
+    <string name="title_activity_afirmaciones_fragment">Afirmaciones Diarias</string>
+    <string name="title_activity_meditaciones_fragment">MeditacionesFragmen</string>
+    <string name="title_activity_calendario_fragment">Calendario</string>
+    <string name="title_activity_diario_fragment">Diario</string>
+    <string name="title_activity_libros_fragment">Libros</string>
+    <string name="title_activity_sitios_fragment">Sitios</string>
+
+    <color name="text_color">#31D1F1</color>
+    <color name="white">#ffffff</color>
+
+    <string name="open">Open</string>
+    <string name="title_activity_log_in">Log In</string>
+    <string name="title_activity_reproductor">Reproductor</string>
+    <string name="title_activity_evento">Evento</string>
+    <string name="title_activity_reproductor1">Reproductor</string>
+    <string name="title_activity_reproductor2">Reproductor</string>
+    <string name="title_activity_reproductor3">Reproductor</string>
+    <string name="title_activity_libros">Libros</string>
+    <string name="title_activity_stios">Stios</string>
+    <string name="title_activity_mother">MotherActivity</string>
+
+</resources>

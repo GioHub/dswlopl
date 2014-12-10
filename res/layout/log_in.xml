@@ -13,19 +13,21 @@
  
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="576dp"
+      android:layout_height="wrap_content"
       android:orientation="vertical" >
 
       <EditText
           android:id="@+id/editText2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+	      android:layout_height="40dp"
+	      android:textAlignment="center"
           android:layout_alignLeft="@+id/editText1"
           android:layout_below="@+id/editText1"
-          android:layout_marginTop="15dp"
+          android:layout_marginTop="20dp"
           android:background="#73ffffff"
-          android:ems="10"
-          android:imeOptions="actionNext"
+          android:inputType="text|textNoSuggestions"
+    	  android:imeOptions="actionNext"
+          android:windowSoftInputMode="stateHidden"
           android:hint="@string/mailplace"
           android:text="@string/email" />
 
@@ -41,13 +43,16 @@
 
       <EditText
           android:id="@+id/editText1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/imageView1"
+          android:layout_width="match_parent"
+	      android:layout_height="40dp"
+	      android:textAlignment="center"
+	      android:layout_marginTop="15dp"          
+	      android:layout_below="@+id/imageView1"
           android:layout_centerHorizontal="true"
           android:background="#73ffffff"
-          android:ems="10"
-          android:imeOptions="actionNext"
+          android:inputType="textEmailAddress"
+    	  android:imeOptions="actionNext"
+          android:windowSoftInputMode="stateHidden"
           android:hint="@string/nombreplace"
           android:text="@string/nombre" />
 
@@ -75,7 +80,7 @@
           android:layout_height="wrap_content"
           android:layout_below="@+id/small"
           android:layout_centerHorizontal="true"
-          android:layout_marginTop="80dp"
+          android:layout_marginTop="40dp"
           android:text="@string/privacy"
           android:textAppearance="?android:attr/textAppearanceLarge" />
 
