@@ -34,6 +34,8 @@
     <string name="menu4">CHECK YOUR DAY</string>
     <string name="menu5">SOUL NOTES</string>
     <string name="menu6">CURIOSITY</string>
+    <string name="skipintro">Skip registration</string>
+    
 
     <!-- Lista de titulos de navegacion -->
     <string-array name="nav_options">
