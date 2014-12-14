@@ -21,6 +21,7 @@
         android1:layout_height="50dp"
         android1:layout_alignParentBottom="true"
         android1:layout_centerHorizontal="true"
+        android:text="hola"
         android1:background="@drawable/btn2" />
        
 <AbsoluteLayout
@@ -134,9 +135,9 @@
 
     <TextView
         android1:id="@+id/textView4"
-        android1:layout_width="228dp"
-        android1:layout_height="60dp"
-        android1:layout_x="54dp"
+        android1:layout_width="210dp"
+        android1:layout_height="44dp"
+        android1:layout_x="61dp"
         android1:layout_y="6dp"
         android1:text="@string/mainphrase"
         android1:textSize="10dp" />
