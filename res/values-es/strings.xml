@@ -7,9 +7,18 @@
     <string name="title_activity_home">Home</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="inital_Time">Inicio</string>
-    <string name="nombre">Escriba su nombre</string>
+    <string name="nombre"></string>
+    <string name="nombreplace">Nombre de usuario</string>
+    <string name="mailplace">Correo electrónico</string>
+    <string name="dateplace">Selecciona una fecha</string>
     <string name="save">Guardar</string>
-    <string name="email">Correo electronico</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="privacy">Aviso de privacidad</string>
+    <string name="about">Acerca de</string>
+    <string name="registeredc">Felicidades. Gracias por registrarte!!</string>
+    <string name="registered">Usted esta registrado en Appapacho Fértil</string>
+    <string name="daily">Afirmaciones diarias</string>
+    <string name="email"></string>
     <string name="afirmacion">"Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn"</string>
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
@@ -18,15 +27,23 @@
     <string name="med3">Alcanzando mis sueños</string>
     <string name="med4">Armonizate pre tratamiento</string>
     <string name="cumpleanos"> Un apapacho de luz para este día tan especial.Siente como te abraza, te sostiene e irradias con ella paz. ¡Feliz Cumpleaños!</string>
+    <string name="mainphrase">Las apariencias no me perturban, tengo confianza en Dios y Él inmediatamente me concede los deseos de mi corazón - Florence Scovel Shinn</string>
+    <string name="menu1"></string>
+    <string name="menu2"></string>
+    <string name="menu3"></string>
+    <string name="menu4"></string>
+    <string name="menu5"></string>
+    <string name="menu6"></string>
+    <string name="skipintro">Continuar sin registro</string>
 
     <!-- Lista de titulos de navegacion -->
     <string-array name="nav_options">
-        <item>Prm</item>
-        <item>Sec</item>
-        <item>Thr</item>
-        <item>fou</item>
-        <item>fif</item>
-        <item>Six</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <!-- Lista de iconos de navegacion -->
@@ -63,7 +80,6 @@
     <string name="title_activity_reproductor1">Reproductor</string>
     <string name="title_activity_reproductor2">Reproductor</string>
     <string name="title_activity_reproductor3">Reproductor</string>
-    <string name="title_activity_reproductorg">AndroidBuildingMusicPlayer</string>
     <string name="title_activity_libros">Libros</string>
     <string name="title_activity_stios">Stios</string>
     <string name="title_activity_mother">MotherActivity</string>

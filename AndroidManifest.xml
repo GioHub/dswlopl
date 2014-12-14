@@ -103,6 +103,10 @@
             android:label="@string/title_activity_reproductor" >
         </activity>
         <activity
+            android:name=".AndroidBuildingMusicPlayerActivity"
+            android:label="@string/title_activity_reproductorg" >
+        </activity>
+        <activity
             android:name=".Evento"
             android:label="@string/title_activity_evento" >
         </activity>

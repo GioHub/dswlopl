@@ -63,7 +63,9 @@ public class MeditacionesFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Intent intent = new Intent(getActivity(), Reproductor.class);
+					//Intent intent = new Intent(getActivity(), Reproductor.class);
+					Intent intent = new Intent(getActivity(), AndroidBuildingMusicPlayerActivity.class);
+					intent.putExtra("AUDIO_ID", 1);
 					startActivity(intent);
 				}});
             Button btn2 =(Button)rootView.findViewById(R.id.btn2);
@@ -72,7 +74,9 @@ public class MeditacionesFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Intent intent = new Intent(getActivity(), Reproductor1.class);
+					//Intent intent = new Intent(getActivity(), Reproductor1.class);
+					Intent intent = new Intent(getActivity(), AndroidBuildingMusicPlayerActivity.class);
+					intent.putExtra("AUDIO_ID", 2);
 					startActivity(intent);
 				}});
             Button btn3 =(Button)rootView.findViewById(R.id.btn3);
@@ -81,18 +85,22 @@ public class MeditacionesFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Intent intent = new Intent(getActivity(), Reproductor2.class);
+					//Intent intent = new Intent(getActivity(), Reproductor2.class);
+					Intent intent = new Intent(getActivity(), AndroidBuildingMusicPlayerActivity.class);
+					intent.putExtra("AUDIO_ID", 3);
 					startActivity(intent);
 				}});
-//            Button btn4 =(Button)rootView.findViewById(R.id.btn4);
-//            btn4.setOnClickListener(new OnClickListener(){
-//
-//			@Override
-//				public void onClick(View v) {
-//					// TODO Auto-generated method stub
-//					Intent intent3 = new Intent(getActivity(), Reproductor3.class);
-//					startActivity(intent3);
-//				}});
+            Button btn4 =(Button)rootView.findViewById(R.id.Button01);
+            btn4.setOnClickListener(new OnClickListener(){
+
+			@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					//Intent intent3 = new Intent(getActivity(), Reproductor3.class);
+				Intent intent = new Intent(getActivity(), AndroidBuildingMusicPlayerActivity.class);
+				intent.putExtra("AUDIO_ID", 4);
+					startActivity(intent);
+				}});
 	        return rootView;
 	    }
 }
